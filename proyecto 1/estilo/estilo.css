@@ -1,0 +1,309 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+body{
+    background: #dfd7d7;
+}
+
+h1,h2,h3,h4,p {
+    font-family: 'Teko', sans-serif;
+}
+
+header {
+    background-color: #000;
+    display: flex;
+    justify-content: center;
+    padding: 1rem;
+    position: fixed;
+    z-index: 100;
+    width: 100%;
+}
+header .logo{
+    margin-right: 80vw;
+}
+header .menu {
+    display: flex;
+    list-style: none;
+    width: 400px;
+}
+
+header .menu li {
+    margin: .25rem;
+    padding: .25rem;
+    width: 25%;
+    text-align: center;
+
+}
+
+a{
+    color: #fff;
+    text-decoration: none;
+    font-family: 'Teko', sans-serif;
+    font-size: 1.5rem;
+    font-weight: 300;
+}
+
+header .menu li a:hover {
+    color: #fd7581;
+    font-weight: 500;
+}
+
+.active{
+    color: #ff4655;
+    font-weight: 500;
+}
+
+/*comienza hero*/
+#hero {
+    height: 100vh;
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#hero .hero__video {
+    filter: brightness(0.5);
+    position: absolute;
+}
+
+#hero .hero__title {
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    position: relative;
+}
+
+.hero__button{
+    background-color: #ff4655;
+    padding: 1rem;
+    min-width: 300px;
+    display: flex;
+    justify-content: center;
+    text-decoration: none;
+    max-width: 400px;
+    
+}
+.hero__title h2 {
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: #fff;
+    text-transform: uppercase;
+    font-family: 'Sarpanch', sans-serif;
+}
+
+.hero__button {
+    margin-top: 1rem;
+    position: relative;
+    overflow: hidden;
+}
+
+#hero .hero__button:hover .button__overlay {
+    right: 0%;
+    transform: skewX(0deg);
+    opacity: 1;
+}
+
+#hero .hero__button:hover h2 {
+    color: #000;
+    z-index: 3;
+    font-weight: 700;
+}
+
+.button__overlay {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: 2;
+    background-color: #ffffff;
+    top: 0;
+    right: 100%;
+    opacity: 0;
+    transform: skewX(-15deg);
+    transition: 0.2s all ease-in-out;
+}
+#hero .hero__title .img_logo{
+    filter: invert(100%);
+    margin: 3rem;
+}
+
+/*termina hero*/
+ 
+/*somos valorant*/
+#s_valorant{
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    margin-top: 10vh;
+}
+
+.con{
+    width: 90vw;
+    height: 70vh;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+.con h3{
+    font-size: 2rem;
+}
+.con p{
+    font-size: 1.5rem;
+    width: 40vw;
+}
+#s_valorant .con >h2{
+    font-size: 7rem;
+    width: 1vw;
+    display: inline-block;
+    line-height: 0.8;
+    transform: scale(1,1.5);
+    margin-bottom: 5vh;
+}
+#s_valorant video{
+    width: 40vw;
+    margin: auto;
+}
+.hero__button:hover .button__overlay {
+    right: 0%;
+    transform: skewX(0deg);
+    opacity: 1;
+}
+.hero__button h2 {
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: #fff;
+    text-transform: uppercase;
+    font-family: 'Sarpanch', sans-serif;
+    z-index: 3;
+}
+.blak{
+    background: #000;
+}
+/*final de solo falorant*/
+
+/*agentes*/
+#agente{
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    margin-top: 10vh;
+    background:url(../img/agent-background.JPG);
+}
+#agente img{
+    width: 30vw;
+    height: 60vh;
+    margin: auto;
+}
+#agente .con{
+    width: 90vw;
+    height: 70vh;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    color:#fff;
+}
+#agente .con .hero__button{
+    margin-top: 10vh;
+}
+.con >h2{
+    font-size: 7rem;
+    width: 0px;
+    display:contents;
+    word-spacing: -0.3vw;
+    transform: scale(1,1.5);
+}
+
+/*final de agente*/
+
+/*mapa*/
+
+#mapa{
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    margin-top: 10vh;
+}
+#mapa img{
+    width: 30vw;
+    height: 70vh;
+    margin: auto;
+    margin-bottom: 15vh;
+}
+#mapa .con .hero__button{
+    margin-top: 10vh;
+}
+
+/*final mapa*/
+
+/*personajes*/
+
+.personajes{
+    background: #0F1923;
+    color: #fff;
+}
+#p_titulo {
+    background: url(https://cmsassets.rgpub.io/sanity/images/dsfx7636/news/122e6caea8b2a2dbb6d6e71eea4e24effab342da-5120x574.png?auto=format&fit=fill&q=80&w=1903)fixed;
+}
+#p_titulo h1{
+    text-align: center;
+    font-size:10rem ;
+    z-index: 10;
+}
+#p_agente{
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    width: 85vw;
+    height: 100vh;
+    justify-content: space-evenly;
+}
+#p_agente .con_img{
+    width: fit-content;
+    height: fit-content;
+    border: 1px solid #fff ;
+    margin: 10px 20px 20px 10px;
+    overflow: hidden;
+
+}
+#p_agente .con_img .pesr h2{
+    background: #fff;
+    color: #000;
+    text-align: center;
+    text-transform: uppercase;
+    position: relative;
+}
+#p_agente .con_img img:hover{
+    transform: scale(1.1);
+    transition:0.3s ease;
+}
+#p_agente .con_img:hover .pesr h2{
+    background: #999;
+    transition: 0.3s ease;
+}
+
+/*fin personajes*/
+
+/*pag mapas*/
+
+#m_titulo{
+    background: url(https://cmsassets.rgpub.io/sanity/images/dsfx7636/news/7e09a710ddf1fbaa1834a35f3a7392b0c72b4011-5120x638.png?auto=format&fit=fill&q=80&w=1896);
+}
+#m_titulo h1{
+    text-align: center;
+    font-size:10rem ;
+    z-index: 10;
+}
+
+/*fin pag mapas*/
+
+/* pagina info*/
